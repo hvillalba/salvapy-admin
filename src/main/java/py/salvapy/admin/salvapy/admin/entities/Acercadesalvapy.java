@@ -37,7 +37,7 @@ public class Acercadesalvapy implements Serializable {
     @Basic(optional = false)
     @Column(name = "id")
     private Integer id;
-    @Size(max = 850)
+    
     @Column(name = "descripcion")
     private String descripcion;
 

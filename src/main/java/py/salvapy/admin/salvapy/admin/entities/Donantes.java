@@ -69,6 +69,8 @@ public class Donantes implements Serializable {
     private String descripcion;
     @Column(name = "estado")
     private String estado;
+    @Column(name = "email")
+    private String email;
     @Column(name = "sexo")
     private String sexo;
     @Column(name = "profesion")
@@ -111,10 +113,17 @@ public class Donantes implements Serializable {
     @JoinColumn(name = "tipo_sangre_id", referencedColumnName = "id")
     @ManyToOne(fetch = FetchType.LAZY)
     private TipoSangre tipoSangreId;
-    
     @Column(name = "token")
     private String token;
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
     public String getToken() {
         return token;
     }

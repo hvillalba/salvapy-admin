@@ -16,7 +16,6 @@ import com.vaadin.ui.themes.ValoTheme;
 import java.util.function.Consumer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.vaadin.hene.expandingtextarea.ExpandingTextArea;
 import py.salvapy.admin.salvapy.admin.dao.AcercaDeDao;
 import py.salvapy.admin.salvapy.admin.entities.Acercade;
 import py.salvapy.admin.salvapy.admin.util.ResourceLocator;
@@ -28,7 +27,7 @@ import py.salvapy.admin.salvapy.admin.util.ResourceLocator;
 public class AcercaDeForm  extends FormLayout{
     TextArea descripcion = new TextArea("Descripción", "");
     
-    ExpandingTextArea expandingTextArea;
+    //ExpandingTextArea expandingTextArea;
     Button save = new Button("Guardar");
     Button cancel = new Button("Cancelar");
     Button delete = new Button("Borrar");

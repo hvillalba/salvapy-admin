@@ -37,7 +37,6 @@ public class Acercade implements Serializable {
     @Basic(optional = false)
     @Column(name = "id")
     private Integer id;
-    @Size(max = 800)
     @Column(name = "descripcion")
     private String descripcion;
 

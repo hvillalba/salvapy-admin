@@ -80,6 +80,7 @@ public class AcercaDeSalvapyForm extends FormLayout {
             setSizeUndefined();
             //VerticalLayout verticalLayout = createVerticalLayout();
             HorizontalLayout botones = new HorizontalLayout();
+            descripcion.setWordWrap(false);
             botones.addComponents(save, cancel, delete);
             save.addStyleName(ValoTheme.BUTTON_PRIMARY);
             delete.addStyleName(ValoTheme.BUTTON_DANGER);

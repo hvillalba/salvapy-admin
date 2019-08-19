@@ -46,7 +46,6 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.vaadin.easyuploads.UploadField;
 import py.salvapy.admin.salvapy.admin.dao.DonacionDao;
 import py.salvapy.admin.salvapy.admin.dao.NoticiasDao;
 import py.salvapy.admin.salvapy.admin.entities.Donacion;
@@ -265,21 +264,21 @@ public class DonacionForm extends CssLayout implements View {
         Util.deleteFileFromDisk(ubicacion,fileName);
         System.out.println("Borrar archivo borrado...!!!");
     }
-    private void showUploadedImage(UploadField upload) {
-        Object value = upload.getValue();
-        final byte[] data = (byte[]) value;
-
-        StreamResource resource = new StreamResource(
-                new StreamResource.StreamSource() {
-                    @Override
-                    public InputStream getStream() {
-                        return new ByteArrayInputStream(data);
-                    }
-                }, "filename.png");
-
-        image.setSource(resource);
-    }
-    
+//    private void showUploadedImage(UploadField upload) {
+//        Object value = upload.getValue();
+//        final byte[] data = (byte[]) value;
+//
+//        StreamResource resource = new StreamResource(
+//                new StreamResource.StreamSource() {
+//                    @Override
+//                    public InputStream getStream() {
+//                        return new ByteArrayInputStream(data);
+//                    }
+//                }, "filename.png");
+//
+//        image.setSource(resource);
+//    }
+//    
       // convenience empty getter and setter implementation for better readability
     public static class No {
         public static <SOURCE, TARGET> ValueProvider<SOURCE, TARGET> getter() {

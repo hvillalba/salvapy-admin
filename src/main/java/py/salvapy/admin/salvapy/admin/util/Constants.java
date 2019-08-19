@@ -17,10 +17,10 @@ public class Constants {
     public static final String PUBLIC_API_URL = PUBLIC_SERVER_URL + ":8080/salvapyws/api/";
     public static final String PUBLIC_API_CONFIRM_URL = PUBLIC_API_URL + "auth/public/confirm/";
     
-    public static final String HOST_NAME_SMTP = "server1.hostipy.com";
+    public static final String HOST_NAME_SMTP = "smtp.gmail.com";
     public static final String PUERT0_SMTP = "465";
-    public static final String USER_NAME_SMTP = "noreply@minicubic.com";
-    public static final String PASS_SMTP = ".noreply.80*";
+    public static final String USER_NAME_SMTP = "salvaparaguay@gmail.com";
+    public static final String PASS_SMTP = "salvapy2019";
     
     public static final String FILE_FORM_NAME = "fileData";
     public static final String UPLOAD_DIR = "/var/www/html";

@@ -38,7 +38,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.function.Consumer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.vaadin.easyuploads.UploadField;
 import py.salvapy.admin.salvapy.admin.dao.EventoDao;
 import py.salvapy.admin.salvapy.admin.dao.NoticiasDao;
 import py.salvapy.admin.salvapy.admin.entities.Evento;
@@ -201,21 +200,21 @@ public class EventoForm extends CssLayout implements View {
             e.printStackTrace();
         }
     }
-    
-    private void showUploadedImage(UploadField upload) {
-        Object value = upload.getValue();
-        final byte[] data = (byte[]) value;
-
-        StreamResource resource = new StreamResource(
-                new StreamResource.StreamSource() {
-                    @Override
-                    public InputStream getStream() {
-                        return new ByteArrayInputStream(data);
-                    }
-                }, "filename.png");
-
-        image.setSource(resource);
-    }
+//    
+//    private void showUploadedImage(UploadField upload) {
+//        Object value = upload.getValue();
+//        final byte[] data = (byte[]) value;
+//
+//        StreamResource resource = new StreamResource(
+//                new StreamResource.StreamSource() {
+//                    @Override
+//                    public InputStream getStream() {
+//                        return new ByteArrayInputStream(data);
+//                    }
+//                }, "filename.png");
+//
+//        image.setSource(resource);
+//    }
     
       // convenience empty getter and setter implementation for better readability
     public static class No {
